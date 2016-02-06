@@ -183,13 +183,13 @@ sub calamity {
             IRC::chanmsg(Simulation::clog("$player scratched their ring! $player\'s $type loses 10% effectiveness."));
         }
         elsif ($type eq "shield") {
-            IRC::chanmsg(Simulation::clog("$player stubmled when fighting bandits and fell on their shield! $player\'s $type loses 10% effectiveness."));
+            IRC::chanmsg(Simulation::clog("$player stumbled when fighting bandits and fell on their shield! $player\'s $type loses 10% effectiveness."));
         }
         elsif ($type eq "tunic") {
             IRC::chanmsg(Simulation::clog("$player spilled a level 7 shrinking potion on their tunic! $player\'s $type loses 10% effectiveness."));
         }
         else {
-            IRC::chanmsg(Simulation::clog("$player left their weapon out in the rain to rust! $player\'s $type loses 10% effectiveness."));
+            IRC::chanmsg(Simulation::clog("$player accidentaly sat on their weapon! $player\'s $type loses 10% effectiveness."));
         }
         my $suffix="";
         if ($Simulation::rps{$player}{item}{$type} =~ /(\D)$/) { $suffix=$1; }
